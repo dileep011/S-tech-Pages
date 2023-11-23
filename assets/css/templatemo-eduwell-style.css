@@ -384,7 +384,6 @@ section.our-courses .section-heading p {
 section.our-courses:before {
   position: absolute;
   content: '';
-  background-image: url(../images/our-courses-left-dec.png);
   left: 45px;
   top: -140px;
   width: 291px;
@@ -395,7 +394,6 @@ section.our-courses:before {
 section.our-courses:after {
   position: absolute;
   content: '';
-  background-image: url(../images/our-courses-right-dec.png);
   right: 45px;
   top: -140px;
   width: 291px;
@@ -530,7 +528,28 @@ section.our-courses ul.nacc li.active {
 section.our-courses ul.nacc li p {
   margin: 0;
 }
+.bn40 {
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: large;
+  padding: 4px 6px;
+  color: #fff !important;
+}
 
+.bn40::after {
+  max-width: 100%;
+  height: 2px;
+  display: block;
+  content: "";
+  background: linear-gradient(-90deg, #ff9100 0%, #f10366 50%, #6173ff 100%);
+  opacity: 1;
+  margin-bottom: -6px;
+  margin-top: 1px;
+}
+
+.bn40div {
+  display: flex;
+}
 
 /*
 ---------------------------------------------
@@ -638,172 +657,9 @@ testimonials
 
 
 
-/* 
----------------------------------------------
-contact us
---------------------------------------------- 
-*/
-
-section.contact-us {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0px;
-  position: relative;
-}
-
-section.contact-us:after {
-  position: absolute;
-  content: '';
-  left: 0px;
-  top: 60px;
-  width: 267px;
-  height: 396px;
-  z-index: 1;
-}
-
-section.contact-us .contact-info {
-  background-color: #fff;
-  margin-top: -30px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
-  border-radius: 15px;
-  z-index: 5;
-  position: relative;
-  padding: 20px;
-}
-
-section.contact-us .contact-info .icon i {
-  margin-right: 15px;
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
-  color: #fff;
-}
-
-section.contact-us .contact-info h4 {
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-section.contact-us .contact-info span {
-  font-size: 15px;
-  color: #dc8cdb;
-  font-weight: 700;
-}
-
-section.contact-us .section-heading {
-  text-align: left;
-  margin-bottom: 40px;
-}
-
-section.contact-us #contact {
-  margin-left: -100px;
-  position: relative;
-  z-index: 5;
-  background-color: #fff;
-  margin-top: 40px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
-  border-radius: 15px;
-  padding: 40px;
-}
-
-section.contact-us #contact input {
-  width: 100%;
-  height: 40px;
-  border-radius: 5px;
-  background-color: #f4f7fb;
-  outline: none;
-  border: none;
-  box-shadow: none;
-  font-size: 13px;
-  font-weight: 500;
-  color: #7a7a7a;
-  padding: 0px 15px;
-  margin-bottom: 30px;
-}
-
-section.contact-us #contact textarea {
-  width: 100%;
-  min-height: 140px;
-  max-height: 180px;
-  border-radius: 5px;
-  background-color: #f4f7fb;
-  outline: none;
-  border: none;
-  box-shadow: none;
-  font-size: 13px;
-  font-weight: 500;
-  color: #7a7a7a;
-  padding: 15px;
-  margin-bottom: 30px;
-}
-
-section.contact-us #contact button {
-  float: right;
-  font-size: 13px;
-  color: #fff;
-  background: rgb(219,138,222);
-  background: linear-gradient(-145deg, rgba(219,138,222,1) 0%, rgba(246,191,159,1) 100%);
-  padding: 12px 30px;
-  display: inline-block;
-  border-radius: 5px;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: all .3s;
-  transition: all .3s;
-  border: none;
-  outline: none;
-}
-
-section.contact-us #contact button:hover {
-  opacity: 0.9;
-}
-
-section.contact-us ul.social-icons li {
-  display: inline-block;
-  margin: 0px 5px;
-}
-
-section.contact-us ul.social-icons {
-  text-align: center;
-  margin-top: 70px;
-}
-
-section.contact-us ul.social-icons li a {
-  width: 44px;
-  height: 44px;
-  display: inline-block;
-  text-align: center;
-  line-height: 44px;
-  background-color: #fff;
-  color: #dc8cdb;
-  border-radius: 50%;
-  transition: all .5s;
-}
-
-section.contact-us ul.social-icons li a:hover {
-  background-color: #dc8cdb;
-  color: #fff;
-}
-
-p.copyright {
-  text-align: center;
-  color: #fff;
-  margin: 40px 0px;
-}
-
-p.copyright a {
-  font-weight: 700;
-  color: #fff;
-}
 
 
+/*
 ---------------------------------------------
 about us page
 ---------------------------------------------
@@ -861,7 +717,6 @@ section.our-team .section-heading p {
 section.our-team:before {
   position: absolute;
   content: '';
-  background-image: url(../images/our-courses-left-dec.png);
   left: 45px;
   top: -140px;
   width: 291px;
@@ -872,7 +727,6 @@ section.our-team:before {
 section.our-team:after {
   position: absolute;
   content: '';
-  background-image: url(../images/our-courses-right-dec.png);
   right: 45px;
   top: -140px;
   width: 291px;
@@ -1083,93 +937,6 @@ section.our-office #video img {
   border-radius: 20px;
 }
 
-
-
-/*
----------------------------------------------
-our services page
----------------------------------------------
-*/
-
-section.featured-product {
-  position: relative;
-}
-
-section.featured-product:before {
-  position: absolute;
-  content: '';
-  background-image: url(../images/testimonials-left-dec.png);
-  left: 0px;
-  top: -140px;
-  width: 593px;
-  height: 352px;
-  z-index: 1;
-}
-
-section.featured-product:after {
-  position: absolute;
-  content: '';
-  background-image: url(../images/testimonials-right-dec.png);
-  right: 0px;
-  bottom: -140px;
-  width: 632px;
-  height: 352px;
-  z-index: 1;
-}
-
-section.featured-product .info-item {
-  border-radius: 15px;
-  text-align: left;
-  padding: 60px 30px 30px 30px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
-  position: relative;
-  margin-bottom: 90px;
-}
-
-section.featured-product .last-info {
-  margin-bottom: 0px;
-}
-
-section.featured-product .left-info .info-item .icon {
-  right: 30px;
-  top: -30px;
-}
-
-section.featured-product .left-info .info-item {
-  text-align: right;
-}
-
-section.featured-product .right-info .info-item .icon {
-  left: 30px;
-  top: -30px;
-}
-
-section.featured-product .info-item .icon {
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  display: inline-block;
-  border-radius: 15px;
-  text-align: center;
-  line-height: 80px;
-  background-color: #fff;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.06);
-}
-
-section.featured-product .info-item .icon img {
-  max-width: 60%;
-}
-
-section.featured-product .info-item h4 {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-size: 20px;
-  font-weight: 800;
-}
-
-section.featured-product .product-image {
-  margin: 0px 60px;
-}
 
 
 /*
@@ -1480,6 +1247,7 @@ body {
     font-size: 22px;
   }
 }
+
 
 .footer {
   display: flex;
