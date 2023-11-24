@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
 
     <meta charset="utf-8">
@@ -12,55 +11,113 @@
     <title>S Technologies</title>
     <link rel="icon" type="assets/images/png" href="assets/images/S_Tech-removebg-preview.png"/>
 
+    <!-- Bootstrap core CSS -->
+
 
     <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-eduwell-style.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
   </head>
 <body>
-  <header class="header-area">
-    <nav class="menu-container">
-      <!-- burger menu -->
-      <input type="checkbox" aria-label="Toggle menu" />
-      <span></span>
-      <span></span>
-      <span></span>
-      <!-- logo -->
-      <a href="#" class="menu-logo">
-        <img
-          src="https://wweb.dev/resources/navigation-generator/logo-placeholder.png"
-          alt="My Awesome Website"
-        />
-      </a>
-
-      <!-- menu items -->
-      <div class="menu1">
-        <ul class="menu-bar">
-          <li>
-          </li>
-          <li>
-          </li>
-          <li>
-          </li>
-          <li>       
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#signup"> Sign-up </a>
-          </li>
-          <li>
-            <a href="#login"> Login </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <header class="section page-header">
+    <!-- RD Navbar-->
+    <div class="rd-navbar-wrap">
+      <nav
+              class="rd-navbar rd-navbar-classic"
+              data-layout="rd-navbar-fixed"
+              data-sm-layout="rd-navbar-fixed"
+              data-md-layout="rd-navbar-fixed"
+              data-md-device-layout="rd-navbar-fixed"
+              data-lg-layout="rd-navbar-static"
+              data-lg-device-layout="rd-navbar-fixed"
+              data-xl-layout="rd-navbar-static"
+              data-xl-device-layout="rd-navbar-static"
+              data-xxl-layout="rd-navbar-static"
+              data-xxl-device-layout="rd-navbar-static"
+              data-lg-stick-up-offset="46px"
+              data-xl-stick-up-offset="46px"
+              data-xxl-stick-up-offset="46px"
+              data-lg-stick-up="true"
+              data-xl-stick-up="true"
+              data-xxl-stick-up="true"
+      >
+        <div class="rd-navbar-main-outer">
+          <div class="rd-navbar-main">
+            <!-- RD Navbar Panel-->
+            <div class="rd-navbar-panel">
+              <!-- RD Navbar Toggle-->
+              <button
+                      class="rd-navbar-toggle"
+                      data-rd-navbar-toggle=".rd-navbar-nav-wrap"
+              >
+                <span></span>
+              </button>
+              <!-- RD Navbar Brand-->
+              <div class="rd-navbar-brand">
+                <a class="brand" href="index.html"
+                ><img
+                        src="images/logo-default-223x50.png"
+                        alt=""
+                        width="223"
+                        height="50"
+                /></a>
+              </div>
+            </div>
+            <div class="rd-navbar-main-element">
+              <div class="rd-navbar-nav-wrap">
+                <!-- RD Navbar Share-->
+                <div
+                        class="rd-navbar-share fl-bigmug-line-share27"
+                        data-rd-navbar-toggle=".rd-navbar-share-list"
+                >
+                  <ul class="list-inline rd-navbar-share-list">
+                    <li class="rd-navbar-share-list-item">
+                      <a class="icon fa fa-facebook" href="#"></a>
+                    </li>
+                    <li class="rd-navbar-share-list-item">
+                      <a class="icon fa fa-twitter" href="#"></a>
+                    </li>
+                    <li class="rd-navbar-share-list-item">
+                      <a class="icon fa fa-google-plus" href="#"></a>
+                    </li>
+                    <li class="rd-navbar-share-list-item">
+                      <a class="icon fa fa-instagram" href="#"></a>
+                    </li>
+                  </ul>
+                </div>
+                <ul class="rd-navbar-nav">
+                  <li class="rd-nav-item active">
+                    <a class="rd-nav-link" href="#home">Home</a>
+                  </li>
+                  <li class="rd-nav-item">
+                    <a class="rd-nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="rd-nav-item">
+                    <a class="rd-nav-link" href="#projects">Projects</a>
+                  </li>
+                  <li class="rd-nav-item">
+                    <a class="rd-nav-link" href="#team">Team</a>
+                  </li>
+                  <li class="rd-nav-item">
+                    <a class="rd-nav-link" href="#news">News</a>
+                  </li>
+                  <li class="rd-nav-item">
+                    <a class="rd-nav-link" href="#contacts">Contacts</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
   </header>
-  <!-- ***** Header Area End ***** -->
-  <!-- ***** Main Banner Area Start ***** -->
   <section class="main-banner">
       <div class="header-text" style="align-self: center !important;  flex: 0 0 auto;
       width: 90%;">
@@ -83,7 +140,6 @@
         </div>
       </div>
   </section>
-  <!-- ***** Main Banner Area End ***** -->
   <section class="services" id="services">
     <div class="container">
       <div class="row">
@@ -208,331 +264,797 @@
       </div>
     </div>
   </section>
-  <section class="our-courses" id="courses">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-          <div class="section-heading">
-            <h6>OUR COURSES</h6>
-            <h4>What You Can <em>Learn</em></h4>
-            <p>You just think about developing cutting-edge solutions that empower individuals, businesses, and communities to thrive in an increasingly interconnected world</p>
+  <section
+  class="section section-sm section-fluid bg-default text-center"
+  id="projects"
+>
+  <div class="container-fluid">
+    <h2 class="wow fadeInLeft">Latest Projects</h2>
+    <p class="quote-jean wow fadeInRight" data-wow-delay=".1s">
+      In our portfolio, you can browse the latest products developed for
+      our clients for different corporate purposes. Our qualified team of
+      interface designers and software developers is always ready to
+      create something unique for you.
+    </p>
+    <div class="isotope-filters isotope-filters-horizontal">
+      <button
+        class="isotope-filters-toggle button button-md button-icon button-icon-right button-default-outline button-wapasha"
+        data-custom-toggle="#isotope-3"
+        data-custom-toggle-hide-on-blur="true"
+        data-custom-toggle-disable-on-blur="true"
+      >
+        <span class="icon fa fa-caret-down"></span>Filter
+      </button>
+      <ul class="isotope-filters-list" id="isotope-3">
+        <li>
+          <a
+            class="active"
+            href="#"
+            data-isotope-filter="*"
+            data-isotope-group="gallery"
+            >All</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            data-isotope-filter="Type 1"
+            data-isotope-group="gallery"
+            >mobile Apps</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            data-isotope-filter="Type 2"
+            data-isotope-group="gallery"
+            >Custom Software</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            data-isotope-filter="Type 3"
+            data-isotope-group="gallery"
+            >QA & Testing</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            data-isotope-filter="Type 4"
+            data-isotope-group="gallery"
+            >UX and Design</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div
+      class="row row-30 isotope"
+      data-isotope-layout="fitRows"
+      data-isotope-group="gallery"
+      data-lightgallery="group"
+    >
+      <div
+        class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight"
+        data-filter="Type 4"
+      >
+        <!-- Thumbnail Classic-->
+        <article class="thumbnail thumbnail-classic thumbnail-md">
+          <div class="thumbnail-classic-figure">
+            <img
+              src="images/fullwidth-gallery-1-420x350.jpg"
+              alt=""
+              width="420"
+              height="350"
+            />
           </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="naccs">
-            <div class="tabs">
-              <div class="row">
-                <div class="col-lg-3">
-                  <div class="menu">
-                    <div class="active gradient-border"><span>Developer</span></div>
-                    <div class="gradient-border"><span>Data Analyst</span></div>
-                    <div class="gradient-border"><span>Cyber Security</span></div>
-                    <div class="gradient-border"><span>AWS Cloud</span></div>
-                  </div>
-                </div>
-                <div class="col-lg-9">
-                  <ul class="nacc">
-                    <li class="active">
-                      <div>
-                        <div class="left-image">
-                          <img src="assets/images/courses-01.jpg" alt="">
-                          <div class="price"><h6>₹3000</h6></div>
-                        </div>
-                        <div class="right-content">
-                          <h4>Full Stack Developer</h4>
-                          <p>A Full Stack Developer is a professional who is proficient in both front-end and back-end development, meaning they have the skills to work on both the user interface and the server-side components of a web application. Here's an overview of what a Full Stack Developer does and the skills they typically possess:. 
-                          <br><br>A Full Stack Developer is responsible for designing, building, and maintaining web applications from end to end. This includes working on both the client-facing aspects of the application (front end) and the server-side logic and databases (back end).</p>
-                         <span>60 Hours</span>
-                          <span>9 Weeks</span>
-                          <span class="last-span">1 Certificate</span>
-                          <div className="bn40div">
-                            <a class="bn40" href="/">Subscribe Course</a>
-                        </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="left-image">
-                          <img src="assets/images/courses-02.jpg" alt="">
-                          <div class="price"><h6>₹3000</h6></div>
-                        </div>
-                        <div class="right-content">
-                          <h4>Data Analyst</h4>
-                          <p>A Data Analyst is a professional who collects, processes, and analyzes data to gain insights, inform decision-making, and solve problems. Here's an overview of the role of a Data Analyst, their responsibilities, and the skills they typically possess:.<br><br>A Data Analyst plays a crucial role in helping organizations make informed decisions by extracting valuable insights from data. They work with various types of data, including structured (quantitative) and unstructured (qualitative) data, to identify trends, patterns, and correlations that can drive business strategies and improvements.</p>
-                          <span>60 Hours</span>
-                          <span>9 Weeks</span>
-                          <span class="last-span">1 Certificate</span>
-                          <div className="bn40div">
-                            <a class="bn40" href="/">Subscribe Course</a>
-                        </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="left-image">
-                          <img src="assets/images/courses-03.jpg" alt="">
-                          <div class="price"><h6>₹3000</h6></div>
-                        </div>
-                        <div class="right-content">
-                          <h4>Cyber Security</h4>
-                          <p>Cybersecurity is a critical field focused on protecting digital systems, networks, and data from cyber threats, attacks, and breaches. Here's an overview of the role of cybersecurity professionals, their responsibilities, and the skills they typically possess:<br><br>Cybersecurity professionals are responsible for safeguarding digital assets from unauthorized access, data breaches, cyberattacks, and other malicious activities. They play a crucial role in maintaining the confidentiality, integrity, and availability of sensitive information and systems.</p>
-                          <span>60 Hours</span>
-                          <span>9 Weeks</span>
-                          <span class="last-span">1 Certificate</span>
-                          <div className="bn40div">
-                            <a class="bn40" href="/">Subscribe Course</a>
-                        </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <div>
-                        <div class="left-image">
-                          <img src="assets/images/courses-044.jpg" alt="">
-                          <div class="price"><h6>₹3000</h6></div>
-                        </div>
-                        <div class="right-content">
-                          <h4>AWS Cloud</h4>
-                          <p>Amazon Web Services (AWS) is a widely used cloud computing platform that offers a variety of services, including computing power, storage, databases, machine learning, and more. Here's an overview of AWS and its key components:<br><br>Amazon Web Services (AWS) is a cloud computing platform provided by Amazon that enables businesses and individuals to access and use a wide range of computing resources and services over the internet.</p>
-                          <span>60 Hours</span>
-                          <span>9 Weeks</span>
-                          <span class="last-span">1 Certificate</span>
-                          <div className="bn40div">
-                            <a class="bn40" href="/">Subscribe Course</a>
-                        </div>
-                        </div>
-                      </div>
-                      </li>
-                    </ul>
+          <div class="thumbnail-classic-caption">
+            <div class="thumbnail-classic-title-wrap">
+              <a
+                class="icon fl-bigmug-line-zoom60"
+                href="images/grid-gallery-1-1200x800-original.jpg"
+                data-lightgallery="item"
+                ><img
+                  src="images/fullwidth-gallery-1-420x350.jpg"
+                  alt=""
+                  width="420"
+                  height="350"
+              /></a>
+              <h5 class="thumbnail-classic-title">
+                <a href="#">FinStep</a>
+              </h5>
+            </div>
+            <p class="thumbnail-classic-text">
+              We work hard on every app to deliver top-notch features with
+              great UI that you won’t find anywhere else.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div
+        class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight"
+        data-filter="Type 1"
+        data-wow-delay=".1s"
+      >
+        <!-- Thumbnail Classic-->
+        <article class="thumbnail thumbnail-classic thumbnail-md">
+          <div class="thumbnail-classic-figure">
+            <img
+              src="images/fullwidth-gallery-2-420x350.jpg"
+              alt=""
+              width="420"
+              height="350"
+            />
+          </div>
+          <div class="thumbnail-classic-caption">
+            <div class="thumbnail-classic-title-wrap">
+              <a
+                class="icon fl-bigmug-line-zoom60"
+                href="images/grid-gallery-2-1200x800-original.jpg"
+                data-lightgallery="item"
+                ><img
+                  src="images/fullwidth-gallery-2-420x350.jpg"
+                  alt=""
+                  width="420"
+                  height="350"
+              /></a>
+              <h5 class="thumbnail-classic-title">
+                <a href="#">Mobile Finance</a>
+              </h5>
+            </div>
+            <p class="thumbnail-classic-text">
+              We work hard on every app to deliver top-notch features with
+              great UI that you won’t find anywhere else.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div
+        class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight"
+        data-filter="Type 2"
+        data-wow-delay=".2s"
+      >
+        <!-- Thumbnail Classic-->
+        <article class="thumbnail thumbnail-classic thumbnail-md">
+          <div class="thumbnail-classic-figure">
+            <img
+              src="images/fullwidth-gallery-3-420x350.jpg"
+              alt=""
+              width="420"
+              height="350"
+            />
+          </div>
+          <div class="thumbnail-classic-caption">
+            <div class="thumbnail-classic-title-wrap">
+              <a
+                class="icon fl-bigmug-line-zoom60"
+                href="images/grid-gallery-3-1200x800-original.jpg"
+                data-lightgallery="item"
+                ><img
+                  src="images/fullwidth-gallery-3-420x350.jpg"
+                  alt=""
+                  width="420"
+                  height="350"
+              /></a>
+              <h5 class="thumbnail-classic-title">
+                <a href="#">Q-Manage</a>
+              </h5>
+            </div>
+            <p class="thumbnail-classic-text">
+              We work hard on every app to deliver top-notch features with
+              great UI that you won’t find anywhere else.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div
+        class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight"
+        data-filter="Type 3"
+        data-wow-delay=".3s"
+      >
+        <!-- Thumbnail Classic-->
+        <article class="thumbnail thumbnail-classic thumbnail-md">
+          <div class="thumbnail-classic-figure">
+            <img
+              src="images/fullwidth-gallery-4-420x350.jpg"
+              alt=""
+              width="420"
+              height="350"
+            />
+          </div>
+          <div class="thumbnail-classic-caption">
+            <div class="thumbnail-classic-title-wrap">
+              <a
+                class="icon fl-bigmug-line-zoom60"
+                href="images/grid-gallery-4-1200x800-original.jpg"
+                data-lightgallery="item"
+                ><img
+                  src="images/fullwidth-gallery-4-420x350.jpg"
+                  alt=""
+                  width="420"
+                  height="350"
+              /></a>
+              <h5 class="thumbnail-classic-title">
+                <a href="#">WeatherCast</a>
+              </h5>
+            </div>
+            <p class="thumbnail-classic-text">
+              We work hard on every app to deliver top-notch features with
+              great UI that you won’t find anywhere else.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div
+        class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft"
+        data-filter="Type 3"
+      >
+        <!-- Thumbnail Classic-->
+        <article class="thumbnail thumbnail-classic thumbnail-md">
+          <div class="thumbnail-classic-figure">
+            <img
+              src="images/fullwidth-gallery-5-420x350.jpg"
+              alt=""
+              width="420"
+              height="350"
+            />
+          </div>
+          <div class="thumbnail-classic-caption">
+            <div class="thumbnail-classic-title-wrap">
+              <a
+                class="icon fl-bigmug-line-zoom60"
+                href="images/grid-gallery-5-1200x800-original.jpg"
+                data-lightgallery="item"
+                ><img
+                  src="images/fullwidth-gallery-5-420x350.jpg"
+                  alt=""
+                  width="420"
+                  height="350"
+              /></a>
+              <h5 class="thumbnail-classic-title">
+                <a href="#">Home Calendar</a>
+              </h5>
+            </div>
+            <p class="thumbnail-classic-text">
+              We work hard on every app to deliver top-notch features with
+              great UI that you won’t find anywhere else.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div
+        class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft"
+        data-filter="Type 1"
+        data-wow-delay=".1s"
+      >
+        <!-- Thumbnail Classic-->
+        <article class="thumbnail thumbnail-classic thumbnail-md">
+          <div class="thumbnail-classic-figure">
+            <img
+              src="images/fullwidth-gallery-6-420x350.jpg"
+              alt=""
+              width="420"
+              height="350"
+            />
+          </div>
+          <div class="thumbnail-classic-caption">
+            <div class="thumbnail-classic-title-wrap">
+              <a
+                class="icon fl-bigmug-line-zoom60"
+                href="images/grid-gallery-6-1200x800-original.jpg"
+                data-lightgallery="item"
+                ><img
+                  src="images/fullwidth-gallery-6-420x350.jpg"
+                  alt=""
+                  width="420"
+                  height="350"
+              /></a>
+              <h5 class="thumbnail-classic-title">
+                <a href="#">MPlanner</a>
+              </h5>
+            </div>
+            <p class="thumbnail-classic-text">
+              We work hard on every app to deliver top-notch features with
+              great UI that you won’t find anywhere else.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div
+        class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft"
+        data-filter="Type 2"
+        data-wow-delay=".2s"
+      >
+        <!-- Thumbnail Classic-->
+        <article class="thumbnail thumbnail-classic thumbnail-md">
+          <div class="thumbnail-classic-figure">
+            <img
+              src="images/fullwidth-gallery-7-420x350.jpg"
+              alt=""
+              width="420"
+              height="350"
+            />
+          </div>
+          <div class="thumbnail-classic-caption">
+            <div class="thumbnail-classic-title-wrap">
+              <a
+                class="icon fl-bigmug-line-zoom60"
+                href="images/grid-gallery-7-1200x800-original.jpg"
+                data-lightgallery="item"
+                ><img
+                  src="images/fullwidth-gallery-7-420x350.jpg"
+                  alt=""
+                  width="420"
+                  height="350"
+              /></a>
+              <h5 class="thumbnail-classic-title">
+                <a href="#">Alice Messenger</a>
+              </h5>
+            </div>
+            <p class="thumbnail-classic-text">
+              We work hard on every app to deliver top-notch features with
+              great UI that you won’t find anywhere else.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div
+        class="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInLeft"
+        data-filter="Type 3"
+        data-wow-delay=".3s"
+      >
+        <!-- Thumbnail Classic-->
+        <article class="thumbnail thumbnail-classic thumbnail-md">
+          <div class="thumbnail-classic-figure">
+            <img
+              src="images/fullwidth-gallery-8-420x350.jpg"
+              alt=""
+              width="420"
+              height="350"
+            />
+          </div>
+          <div class="thumbnail-classic-caption">
+            <div class="thumbnail-classic-title-wrap">
+              <a
+                class="icon fl-bigmug-line-zoom60"
+                href="images/grid-gallery-8-1200x800-original.jpg"
+                data-lightgallery="item"
+                ><img
+                  src="images/fullwidth-gallery-8-420x350.jpg"
+                  alt=""
+                  width="420"
+                  height="350"
+              /></a>
+              <h5 class="thumbnail-classic-title">
+                <a href="#">WiseMoney</a>
+              </h5>
+            </div>
+            <p class="thumbnail-classic-text">
+              We work hard on every app to deliver top-notch features with
+              great UI that you won’t find anywhere else.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="section section-fluid bg-default">
+        <div class="parallax-container" data-parallax-img="images/parallax-1.jpg">
+          <div class="parallax-content section-xl context-dark bg-overlay-68 bg-mobile-overlay">
+            <div class="container">
+              <div class="row row-30 justify-content-end text-right">
+                <div class="col-sm-7">
+                  <h3 class="wow fadeInLeft">Let's Develop Your Next Great App!</h3>
+                  <p>Do you need a unique software solution for your company? We know how to help you!</p>
+                  <div class="group-sm group-middle group justify-content-end"><a class="button button-primary button-ujarak" href="#modalCta" data-toggle="modal">Get in Touch</a><a class="button button-white-outline button-ujarak" href="#">Learn More</a></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <section class="section section-sm section-bottom-70 section-fluid bg-default">
+        <div class="container-fluid">
+          <h2>What people Say</h2>
+          <div class="row row-50 row-sm">
+            <div class="col-md-6 col-xl-4 wow fadeInRight">
+              <!-- Quote Modern-->
+              <article class="quote-modern quote-modern-custom">
+                <div class="unit unit-spacing-md align-items-center">
+                  <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles" src="images/user-11-75x75.jpg" alt="" width="75" height="75"/></a></div>
+                  <div class="unit-body">
+                    <h4 class="quote-modern-cite"><a href="#">Catherine Williams</a></h4>
+                    <p class="quote-modern-status">Regular client</p>
+                  </div>
+                </div>
+                <div class="quote-modern-text">
+                  <p class="q">RatherApp offers a high caliber of resources skilled in Microsoft Azure .NET, mobile and Quality Assurance. They became our true business partners over the past three years.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4 wow fadeInRight" data-wow-delay=".1s">
+              <!-- Quote Modern-->
+              <article class="quote-modern quote-modern-custom">
+                <div class="unit unit-spacing-md align-items-center">
+                  <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles" src="images/user-12-75x75.jpg" alt="" width="75" height="75"/></a></div>
+                  <div class="unit-body">
+                    <h4 class="quote-modern-cite"><a href="#">Rupert Wood</a></h4>
+                    <p class="quote-modern-status">Regular client</p>
+                  </div>
+                </div>
+                <div class="quote-modern-text">
+                  <p class="q">RatherApp powered us with a competent team to develop products for banking services. The team has been delivering results within budget and time, which is amazing.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-xl-4 wow fadeInRight" data-wow-delay=".2s">
+              <!-- Quote Modern-->
+              <article class="quote-modern quote-modern-custom">
+                <div class="unit unit-spacing-md align-items-center">
+                  <div class="unit-left"><a class="quote-modern-figure" href="#"><img class="img-circles" src="images/user-20-75x75.jpg" alt="" width="75" height="75"/></a></div>
+                  <div class="unit-body">
+                    <h4 class="quote-modern-cite"><a href="#">Samantha Brown</a></h4>
+                    <p class="quote-modern-status">Regular client</p>
+                  </div>
+                </div>
+                <div class="quote-modern-text">
+                  <p class="q">RatherApp is a highly skilled and uniquely capable firm with multitudes of talent on-board. We have collaborated on a number of diverse projects that have been a great success.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+  <section class="section section-sm bg-default">
+    <div class="container">
+      <div class="row row-30 justify-content-center">
+        <div class="col-sm-8 col-md-6 col-lg-4">
+          <article class="box-contacts">
+            <div class="box-contacts-body">
+              <div
+                class="box-contacts-icon fl-bigmug-line-cellphone55"
+              ></div>
+              <div class="box-contacts-decor"></div>
+              <p class="box-contacts-link">
+                <a href="tel:#">+1 323-913-4688</a>
+              </p>
+              <p class="box-contacts-link">
+                <a href="tel:#">+1 323-888-4554</a>
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="col-sm-8 col-md-6 col-lg-4">
+          <article class="box-contacts">
+            <div class="box-contacts-body">
+              <div class="box-contacts-icon fl-bigmug-line-up104"></div>
+              <div class="box-contacts-decor"></div>
+              <p class="box-contacts-link">
+                <a href="#"
+                  >4730 Crystal Springs Dr, Los Angeles, CA 90027</a
+                >
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="col-sm-8 col-md-6 col-lg-4">
+          <article class="box-contacts">
+            <div class="box-contacts-body">
+              <div class="box-contacts-icon fl-bigmug-line-chat55"></div>
+              <div class="box-contacts-decor"></div>
+              <p class="box-contacts-link">
+                <a href="mailto:#">mail@demolink.org</a>
+              </p>
+              <p class="box-contacts-link">
+                <a href="mailto:#">info@demolink.org</a>
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
   </section>
-  <section class="simple-cta">
+  <section
+    class="section section-sm section-last bg-default text-left"
+    id="contacts"
+  >
     <div class="container">
-      <div class="row">
-        <div class="col-lg-5 offset-lg-1">
-          <div class="left-image"></div>
+      <article class="title-classic">
+        <div class="title-classic-title">
+          <h3>Get in touch</h3>
+        </div>
+        <div class="title-classic-text">
+          <p>
+            If you have any questions, just fill in the contact form, and we
+            will answer you shortly.
+          </p>
+        </div>
+      </article>
+      <form
+        class="rd-form rd-form-variant-2 rd-mailform"
+        data-form-output="form-output-global"
+        data-form-type="contact"
+        method="post"
+        action="bat/rd-mailform.php"
+      >
+        <div class="row row-14 gutters-14">
+          <div class="col-md-4">
+            <div class="form-wrap">
+              <input
+                class="form-input"
+                id="contact-your-name-2"
+                type="text"
+                name="name"
+                data-constraints="@Required"
+              />
+              <label class="form-label" for="contact-your-name-2"
+                >Your Name</label
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-wrap">
+              <input
+                class="form-input"
+                id="contact-email-2"
+                type="email"
+                name="email"
+                data-constraints="@Email @Required"
+              />
+              <label class="form-label" for="contact-email-2">E-mail</label>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-wrap">
+              <input
+                class="form-input"
+                id="contact-phone-2"
+                type="text"
+                name="phone"
+                data-constraints="@Numeric"
+              />
+              <label class="form-label" for="contact-phone-2">Phone</label>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="form-wrap">
+              <label class="form-label" for="contact-message-2"
+                >Message</label
+              >
+              <textarea
+                class="form-input textarea-lg"
+                id="contact-message-2"
+                name="message"
+                data-constraints="@Required"
+              ></textarea>
+            </div>
           </div>
         </div>
-        <div class="col-lg-5 align-self-center">
-          <h6>You are at the right Place!</h6>
-          <h4>100% Improve your Employability</h4>
-          <p>Improving your employability is a valuable goal, and there are several steps you can take to enhance your skills, knowledge, and overall attractiveness to potential employers.</p>
-            <a href="/buttons/9"
-            ><button class="bn9">
-              <span>View courses</span>
-            </button></a
+        <button class="button button-primary button-pipaluk" type="submit">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+  <section class="section section-fluid">
+    <!-- Google Map-->
+    <section class="section">
+      <div
+        class="google-map-container"
+        data-center="6036 Richmond hwy., Alexandria, VA, 2230"
+        data-zoom="5"
+        data-styles='[{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#b4d4e1"},{"visibility":"on"}]}]'
+      >
+        <div class="google-map"></div>
+        <ul class="google-map-markers">
+          <li
+            data-location="6036 Richmond hwy., Alexandria, VA, 2230"
+            data-description="6036 Richmond hwy., Alexandria, VA, 2230"
+            data-icon="images/gmap_marker.png"
+            data-icon-active="images/gmap_marker_active.png"
+          ></li>
+        </ul>
+      </div>
+    </section>
+  </section>
+  <div
+    class="modal fade"
+    id="modalCta"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4>Contact Us</h4>
+          <button
+            class="close"
+            type="button"
+            data-dismiss="modal"
+            aria-label="Close"
           >
+            <span aria-hidden="true">×</span>
+          </button>
         </div>
-      </div>
-    </div>
-  </section>
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="section-heading">
-            <h6>Testimonials</h6>
-            <h4>What They <em>Think</em></h4>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
-            <div class="item">
-              <p>“just think about TemplateMo if you need free CSS templates for your website”</p>
-                <h4>Catherine Walk</h4>
-                <span>CEO &amp; Founder</span>
-                <img src="assets/images/quote.png" alt="">
+        <div class="modal-body">
+          <form
+            class="rd-form rd-form-variant-2 rd-mailform"
+            data-form-output="form-output-global"
+            data-form-type="contact-modal"
+            method="post"
+            action="bat/rd-mailform.php"
+          >
+            <div class="row row-14 gutters-14">
+              <div class="col-12">
+                <div class="form-wrap">
+                  <input
+                    class="form-input"
+                    id="contact-modal-name"
+                    type="text"
+                    name="name"
+                    data-constraints="@Required"
+                  />
+                  <label class="form-label" for="contact-modal-name"
+                    >Your Name</label
+                  >
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-wrap">
+                  <input
+                    class="form-input"
+                    id="contact-modal-email"
+                    type="email"
+                    name="email"
+                    data-constraints="@Email @Required"
+                  />
+                  <label class="form-label" for="contact-modal-email"
+                    >E-mail</label
+                  >
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-wrap">
+                  <input
+                    class="form-input"
+                    id="contact-modal-phone"
+                    type="text"
+                    name="phone"
+                    data-constraints="@Numeric"
+                  />
+                  <label class="form-label" for="contact-modal-phone"
+                    >Phone</label
+                  >
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-wrap">
+                  <label class="form-label" for="contact-modal-message"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-input textarea-lg"
+                    id="contact-modal-message"
+                    name="message"
+                    data-constraints="@Required"
+                  ></textarea>
+                </div>
+              </div>
             </div>
-            <div class="item">
-              <p>“think about our website first when you need free HTML templates for your website”</p>
-                <h4>David Martin</h4>
-                <span>CTO of Tech Company</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-            <div class="item">
-              <p>“just think about our website wherever you need free templates for your website”</p>
-                <h4>Sophia Whity</h4>
-                <span>CEO and Co-Founder</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-            <div class="item">
-              <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
-                <h4>Helen Shiny</h4>
-                <span>Tech Officer</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-            <div class="item">
-              <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
-                <h4>George Soft</h4>
-                <span>Gadget Reviewer</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-            <div class="item">
-              <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
-                <h4>Andrew Hall</h4>
-                <span>Marketing Manager</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-            <div class="item">
-              <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
-                <h4>Maxi Power</h4>
-                <span>Fashion Designer</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-            <div class="item">
-              <p>“Praesent accumsan condimentum arcu, id porttitor est semper nec. Nunc diam lorem.”</p>
-                <h4>Olivia Too</h4>
-                <span>Creative Designer</span>
-                <img src="assets/images/quote.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> 
-  <section class="section2 clearfix">
-    <div class="section2-div">
-      <div class="col2 column1 first">
-        <div id="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.6393489665847!2d83.33909807423643!3d17.80863909053497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x441e5bb9d00de19b%3A0x4f73abce3459d74d!2sS%20Technologies!5e0!3m2!1sen!2sin!4v1692346571100!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="sec2innercont">
-          <div class="sec2addr">
-            <p>45 BC, a Latin professor at Hampden-Sydney College in Virginia</p>
-            <p><span class="collig">Phone :</span> +91 976885083</p>
-            <p><span class="collig">Email :</span> vivek.mengu016@gmail.com</p>
-            <p><span class="collig">Fax :</span> +91 9768850839</p>
-          </div>
-        </div>
-        </div>
-
-      </div>
-      <div class="col2 column2 last">
-
-        <div class="sec2contactform">
-          <h3 class="sec2frmtitle">Want to Know More?? Drop Us a Mail</h3>
-          <form action="">
-            <div class="clearfix">
-              <input class="col2 first" type="text" placeholder="FirstName">
-              <input class="col2 last" type="text" placeholder="LastName">
-            </div>
-            <div class="clearfix">
-              <input class="col2 first" type="Email" placeholder="Email">
-              <input class="col2 last" type="text" placeholder="Contact Number">
-            </div>
-            <div class="clearfix">
-              <textarea name="textarea" id="" cols="30" rows="7">Your message here...</textarea>
-            </div>
-            <div class="clearfix"><input type="submit" value="Send"></div>
+            <button
+              class="button button-primary button-pipaluk"
+              type="submit"
+            >
+              Send Message
+            </button>
           </form>
         </div>
-  
       </div>
     </div>
-
-  </section>
-  
-<footer class="footer">
-  <div class="footer__addr">
-    <h1 class="footer__logo">Something</h1>
-        
-    <h2>Contact</h2>
-    
-    <address>
-      5534 Somewhere In. The World 22193-10212<br>
-          
-      <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
-    </address>
   </div>
-  
-  <ul class="footer__nav">
-    <li class="nav__item">
-      <h2 class="nav__title">Media</h2>
-
-      <ul class="nav__ul">
-        <li>
-          <a href="#">Online</a>
-        </li>
-
-        <li>
-          <a href="#">Print</a>
-        </li>
-            
-        <li>
-          <a href="#">Alternative Ads</a>
-        </li>
-      </ul>
-    </li>
-    
-    <li class="nav__item nav__item--extra">
-      <h2 class="nav__title">Technology</h2>
-      
-      <ul class="nav__ul nav__ul--extra">
-        <li>
-          <a href="#">Hardware Design</a>
-        </li>
-        
-        <li>
-          <a href="#">Software Design</a>
-        </li>
-        
-        <li>
-          <a href="#">Digital Signage</a>
-        </li>
-        
-        <li>
-          <a href="#">Automation</a>
-        </li>
-        
-        <li>
-          <a href="#">Artificial Intelligence</a>
-        </li>
-        
-        <li>
-          <a href="#">IoT</a>
-        </li>
-      </ul>
-    </li>
-    
-    <li class="nav__item">
-      <h2 class="nav__title">Legal</h2>
-      
-      <ul class="nav__ul">
-        <li>
-          <a href="#">Privacy Policy</a>
-        </li>
-        
-        <li>
-          <a href="#">Terms of Use</a>
-        </li>
-        
-        <li>
-          <a href="#">Sitemap</a>
-        </li>
-      </ul>
-    </li>
-  </ul>
-  
-  <div class="legal">
-    <p>&copy; 2019 Something. All rights reserved.</p>
-    
-    <div class="legal__links">
-      <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+</div>
+<footer class="section footer-corporate context-dark">
+  <div class="footer-corporate-inset">
+    <div class="container">
+      <div class="row row-40 justify-content-lg-between">
+        <div class="col-sm-6 col-md-12 col-lg-3 col-xl-4">
+          <div class="oh-desktop">
+            <div class="wow slideInRight" data-wow-delay="0s">
+              <h6 class="text-spacing-100 text-uppercase">Contact us</h6>
+              <ul class="footer-contacts d-inline-block d-sm-block">
+                <li>
+                  <div class="unit">
+                    <div class="unit-left"><span class="icon fa fa-phone"></span></div>
+                    <div class="unit-body"><a class="link-phone" href="tel:#">+1 323-913-4688</a></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="unit">
+                    <div class="unit-left"><span class="icon fa fa-envelope"></span></div>
+                    <div class="unit-body"><a class="link-aemail" href="mailto:#">info@demolink.org</a></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="unit">
+                    <div class="unit-left"><span class="icon fa fa-location-arrow"></span></div>
+                    <div class="unit-body"><a class="link-location" href="#">4730 Crystal Springs Dr, Los Angeles, CA 90027</a></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 col-lg-3 col-xl-4">
+          <div class="oh-desktop">
+            <div class="wow slideInDown" data-wow-delay="0s">
+              <h6 class="text-spacing-100 text-uppercase">Popular news</h6>
+              <!-- Post Minimal 2-->
+              <article class="post post-minimal-2">
+                <p class="post-minimal-2-title"><a href="#">Your Personal Guide to 5 Best Places to Visit on Earth</a></p>
+                <div class="post-minimal-2-time">
+                  <time datetime="2019-05-04">May 04, 2019</time>
+                </div>
+              </article>
+              <!-- Post Minimal 2-->
+              <article class="post post-minimal-2">
+                <p class="post-minimal-2-title"><a href="#">Top 10 Hotels: Rating by Wonder Tour Travel Experts</a></p>
+                <div class="post-minimal-2-time">
+                  <time datetime="2019-05-04">May 04, 2019</time>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-11 col-md-7 col-lg-5 col-xl-4">
+          <div class="oh-desktop">
+            <div class="wow slideInLeft" data-wow-delay="0s">
+              <h6 class="text-spacing-100 text-uppercase">Quick links</h6>
+              <ul class="row-6 list-0 list-marked list-marked-md list-marked-secondary list-custom-2">
+                <li><a href="about.html">About us</a></li>
+                <li><a href="#">Our Tours</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+              <div class="group-md group-middle justify-content-sm-start"><a class="button button-lg button-primary button-ujarak" href="#">Get in touch</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-corporate-bottom-panel">
+    <div class="container">
+      <div class="row justfy-content-xl-space-berween row-10 align-items-md-center2">
+        <div class="col-sm-6 col-md-4 text-sm-right text-md-center">
+          <div>
+            <ul class="list-inline list-inline-sm footer-social-list-2">
+              <li><a class="icon fa fa-facebook" href="#"></a></li>
+              <li><a class="icon fa fa-twitter" href="#"></a></li>
+              <li><a class="icon fa fa-google-plus" href="#"></a></li>
+              <li><a class="icon fa fa-instagram" href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 order-sm-first">
+          <!-- Rights-->
+          <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>Wonder Tour</span>. All Rights Reserved. Design by <a href="https://www.templatemonster.com">TemplateMonster</a></p>
+        </div>
+        <div class="col-sm-6 col-md-4 text-md-right">
+          <p class="rights"><a href="#">Privacy Policy</a></p>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="./assets/js/core.min.js"></script>
+<script src="./assets/js/script.js"></script>
   
 </body>
 
