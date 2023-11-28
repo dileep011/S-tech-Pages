@@ -1343,3 +1343,9 @@ h6,
     max-width: 80%;
     margin: 40px auto 0 auto;
 }
+
+div#map {
+    height: 400px;
+	width: 100%;
+}
+
