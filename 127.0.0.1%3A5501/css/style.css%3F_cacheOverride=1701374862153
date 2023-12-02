@@ -6394,7 +6394,7 @@ html.tablet .ui-to-top {
 .rd-menu,
 .rd-navbar-nav,
 .rd-navbar-panel, .rd-navbar-static .rd-menu, .rd-navbar-fixed .rd-navbar-nav-wrap, .rd-navbar-fixed .rd-navbar-submenu, .rd-navbar-project {
-	transition: 0.35s all cubic-bezier(0.65, 0.05, 0.36, 1);
+	/* transition: 0.35s all cubic-bezier(0.65, 0.05, 0.36, 1); */
 }
 
 .rd-navbar--no-transition, .rd-navbar--no-transition * {
