@@ -5994,8 +5994,8 @@ html:not(.lt-ie10) .not-animated {
 }
 
 .fadeInRight {
-	/* -webkit-animation-name: fadeInRight; */
-	animation-name: fadeInRight;
+	-webkit-animation-name: fadeInRight;
+	/* animation-name: fadeInRight; */
 }
 
 @-webkit-keyframes fadeOut {
@@ -6990,12 +6990,12 @@ html.tablet .ui-to-top {
 }
 
 .rd-navbar-static.rd-navbar--is-stuck, .rd-navbar-static.rd-navbar--is-clone {
-	/* position: fixed; */
+	position: fixed;
 	left: 0;
 	top: 0;
 	right: 0;
 	z-index: 1030;
-	/* background: #ffffff; */
+	background: #ffffff;
 }
 
 .rd-navbar-static .rd-navbar--has-dropdown {
@@ -8239,7 +8239,7 @@ html.rd-navbar-fixed-linked .page-header {
 .rd-navbar-classic.rd-navbar-static .rd-navbar-brand img {
 	width: auto;
 	height: auto;
-	max-width: 100px;
+	max-width: 60px;
 	max-height: 1000px;
 }
 
@@ -9548,10 +9548,7 @@ h1 + .tabs-line {
 	margin-top: 0;
 }
 
-.border-2-column > div {
-	/* padding: 0; */
-	/* border-top: 1px solid #e1e1e1; */
-}
+
 
 .border-2-column > div:nth-child(1) {
 	border-top: none;
@@ -9574,9 +9571,6 @@ h1 + .tabs-line {
 	}
 	.border-2-column > div:nth-last-child(2) .counter-amy {
 		padding-bottom: 0;
-	}
-	.border-2-column > div:nth-child(even) {
-		/* border-left: 1px solid #e1e1e1; */
 	}
 	.border-2-column > div:nth-child(even) .counter-amy {
 		padding-right: 0;
