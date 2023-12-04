@@ -6319,7 +6319,7 @@ html:not(.lt-ie10) .not-animated {
 * ToTop
 */
 .ui-to-top {
-	position: fixed;
+	/* position: fixed; */
 	right: 15px;
 	bottom: 15px;
 	z-index: 100;
