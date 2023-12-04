@@ -81,17 +81,46 @@ submit.addEventListener("click", async (e) => {
         }
     } 
 );
+// Feedback
 
 
-var video = document.getElementById("myVideo");
-var btn = document.getElementById("myBtn");
+sendMessage.addEventListener("click", async (e) => {
+    e.preventDefault();
 
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Play";
-  }
-}
+    // Get form input values
+    const name = document.getElementById("contact-your-name-2").value.trim();
+    const email = document.getElementById("contact-email-2").value.trim();
+    const phone = document.getElementById("contact-phone-2").value.trim();
+    const message =document.getElementById("contact-message-2")
+
+ // If all fields are valid, proceed with saving user data 
+        const mess = {
+            "name": name,
+            "email": email,
+            "phone": phone,
+            "message": message
+        };
+
+        try {
+            // Make a POST request to save user data
+            const response = await fetch("http://localhost:8080/user/Email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(mess),
+            });
+
+            // Handle the response
+            if (response.ok) {
+                const data = await response.json();
+                console.log(data);
+                window.alert("send successfully 🤩");
+                window.location.href = "http://127.0.0.1:5500/index.html";
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            window.alert("An error occurred while sending Feedback user");
+        }
+    } 
+);
