@@ -1,52 +1,32 @@
-// Function to validate email using a regular expression
-function emailValidate() {
-    const email = document.getElementById("email").value.trim();
-    const emailReg = /^[a-z0-9]+@[a-z]+\.[^\s@]+$/;
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to validate email using a regular expression
+    function emailValidate() {
+        const email = document.getElementById("email").value.trim();
+        const emailReg = /^[a-z0-9]+@[a-z]+\.[^\s@]+$/;
 
-    return emailReg.test(email);
-}
-
-// Function to store user data in local storage
-function storeData() {
-    const firstName = document.getElementById("FirstName").value.trim();
-    const lastName = document.getElementById("LastName").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value.trim();
-    const phone = document.getElementById("phone").value.trim();
-    const userName = document.getElementById("userName").value.trim();
-
-    const user = {
-        "name": firstName,
-        "lastName": lastName,
-        "email": email,
-        "password": password,
-        "phone": phone,
-        "userName": userName
-    };
-
-    // Check if the browser supports local storage
-    if (typeof (Storage) !== "undefined") {
-        localStorage.setItem("user", JSON.stringify(user));
-    } else {
-        alert("Sorry! Your browser does not support local storage");
+        return emailReg.test(email);
     }
-}
 
-// Event listener for form submission
-const submit = document.getElementById("submit");
+    // Function to store user data in local storage
+    function storeData() {
+        // ... (unchanged)
+    }
 
-submit.addEventListener("click", async (e) => {
-    e.preventDefault();
+    // Event listener for form submission
+    const submit = document.getElementById("submit");
 
-    // Get form input values
-    const firstName = document.getElementById("FirstName").value.trim();
-    const lastName = document.getElementById("LastName").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value.trim();
-    const phone = document.getElementById("Phone").value.trim();
-    const userName = document.getElementById("userName").value.trim();
+    submit.addEventListener("click", async (e) => {
+        e.preventDefault();
 
- // If all fields are valid, proceed with saving user data 
+        // Get form input values
+        const firstName = document.getElementById("FirstName").value.trim();
+        const lastName = document.getElementById("LastName").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+        const phone = document.getElementById("Phone").value.trim();
+        const userName = document.getElementById("userName").value.trim();
+
+        // If all fields are valid, proceed with saving user data
         const user = {
             "name": firstName,
             "lastName": lastName,
@@ -79,21 +59,21 @@ submit.addEventListener("click", async (e) => {
             console.error("Error:", error);
             window.alert("An error occurred while saving user");
         }
-    } 
-);
-// Feedback
+    });
 
+    // Event listener for feedback form submission
+    const sendMessage = document.getElementById("sendMessage");
 
-sendMessage.addEventListener("click", async (e) => {
-    e.preventDefault();
+    sendMessage.addEventListener("click", async (e) => {
+        e.preventDefault();
 
-    // Get form input values
-    const name = document.getElementById("contact-your-name-2").value.trim();
-    const email = document.getElementById("contact-email-2").value.trim();
-    const phone = document.getElementById("contact-phone-2").value.trim();
-    const message =document.getElementById("contact-message-2")
+        // Get form input values
+        const name = document.getElementById("contact-your-name-2").value.trim();
+        const email = document.getElementById("contact-email-2").value.trim();
+        const phone = document.getElementById("contact-phone-2").value.trim();
+        const message = document.getElementById("contact-message-2").value.trim();
 
- // If all fields are valid, proceed with saving user data 
+        // If all fields are valid, proceed with saving user data
         const mess = {
             "name": name,
             "email": email,
@@ -115,12 +95,12 @@ sendMessage.addEventListener("click", async (e) => {
             if (response.ok) {
                 const data = await response.json();
                 console.log(data);
-                window.alert("send successfully 🤩");
+                window.alert("Send successfully 🤩");
                 window.location.href = "http://127.0.0.1:5500/index.html";
             }
         } catch (error) {
             console.error("Error:", error);
-            window.alert("An error occurred while sending Feedback user");
+            window.alert("An error occurred while sending feedback");
         }
-    } 
-);
+    });
+});

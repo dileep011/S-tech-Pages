@@ -1,3 +1,6 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
 input,
 button,
 select,
@@ -28,7 +31,7 @@ form {
 	margin-bottom: 0;
 }
 body {
-	font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-family: 'Mulish', sans-serif;
 	font-size: 14px;
 	line-height: 1.71429;
 	font-weight: 500;
@@ -8239,7 +8242,7 @@ html.rd-navbar-fixed-linked .page-header {
 .rd-navbar-classic.rd-navbar-static .rd-navbar-brand img {
 	width: auto;
 	height: auto;
-	max-width: 100px;
+	max-width: 60px;
 	max-height: 1000px;
 }
 
@@ -9548,10 +9551,7 @@ h1 + .tabs-line {
 	margin-top: 0;
 }
 
-.border-2-column > div {
-	/* padding: 0; */
-	border-top: 1px solid #e1e1e1;
-}
+
 
 .border-2-column > div:nth-child(1) {
 	border-top: none;
@@ -9574,9 +9574,6 @@ h1 + .tabs-line {
 	}
 	.border-2-column > div:nth-last-child(2) .counter-amy {
 		padding-bottom: 0;
-	}
-	.border-2-column > div:nth-child(even) {
-		border-left: 1px solid #e1e1e1;
 	}
 	.border-2-column > div:nth-child(even) .counter-amy {
 		padding-right: 0;
