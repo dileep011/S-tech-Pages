@@ -1,32 +1,32 @@
 const itemDetails = [
     {
         head: 'Front-end development',
-        image: 'path-to-front-end-image.jpg',
+        image: './images/frontendSmallBanner-1024x600.jpg',
         description: "Front-end development: This is the visual side of web development, where you focus on user interface (UI) and user experience (UX). You'll work with languages like HTML, CSS, and JavaScript to build the structure, style, and interactivity of a website.",
     },
     {
         head: 'Back-end development',
-        image: 'path-to-back-end-image.jpg',
+        image: './images/e952490e1355d3acd866cbdaa0715651.jpeg',
         description: "Back-end development: This involves working on the server-side of web development. You'll handle databases, server logic, and server-side scripting using languages like Node.js, Python, or Ruby.",
     },
     {
         head: 'Full Stack development',
-        image: 'path-to-full-stack-image.jpg',
+        image: './images/download (1).jpeg',
         description: "Full Stack development: This encompasses both front-end and back-end development. A Full Stack developer is proficient in building the entire web application, from the user interface to the server-side logic.",
     },
     {
         head: 'Python Development',
-        image: 'path-to-python-image.jpg',
+        image: './images/download (2).jpeg',
         description: "Python Development: Python is a versatile programming language used for various applications, including web development. Python developers work on server-side scripting, data analysis, and more.",
     },
     {
         head: 'C Development',
-        image: 'path-to-c-image.jpg',
+        image: './images/download (3).jpeg',
         description: "C Development: C is a general-purpose programming language often used for system programming. C developers work on low-level programming, including operating systems and embedded systems.",
     },
     {
         head: 'C++ Development',
-        image: 'path-to-cpp-image.jpg',
+        image: './images/images.jpeg',
         description: "C++ Development: C++ is an extension of the C programming language with additional features. C++ developers use it for system/software development, game development, and more.",
     }
     // Add more items as needed
@@ -50,38 +50,50 @@ $(document).ready(function () {
     function getItemDetails(itemId) {
         if (itemId === 1) {
             var firstItem=itemDetails[0];
-            var details = `<img src='${firstItem.image}' alt='Image of Item ${itemId}'>`;
+            var details = `<img style="height: 50%; width: 50%" src='${firstItem.image}' alt='Image of Item ${itemId}'>`;
             details += `<h2>${firstItem.head}</h2>`;
             details += `<p>${firstItem.description}</p>`;
-            details += `<span class="tags">Html</span>`
+            details += `<span class="tags">Html</span>`;
         } else if (itemId === 2) {
-            details = "<img src='image2.jpg' alt='Image of Item 2'>";
-            details +="<h1>Java Development</h1>"
-            details += "<p>A Full Stack Developer is a professional who is proficient in both front-end and back-end development, meaning they have the skills to work on both the user interface and the server-side components of a web application. Here's an overview of what a Full Stack Developer does and the skills they typically possess. <br> <br>A Full Stack Developer is responsible for designing, building, and maintaining web applications from end to end. This includes working on both the client-facing aspects of the application (front end) and the server-side logic and databases (back end).</p>";
+            var secondItem=itemDetails[1];
+            var details = `<img style="height: 50%; width: 50%" src='${secondItem.image}' alt='Image of Item ${itemId}'>`;
+            details += `<h2>${secondItem.head}</h2>`;
+            details += `<p>${secondItem.description}</p>`;
+            details += `<span class="tags">Html</span>`;
         }else if (itemId === 3) {
-            details = "<img src='image2.jpg' alt='Image of Item 2'>";
-            details +="<h1>Python Development</h1>"
-            details += "<p>A Full Stack Developer is a professional who is proficient in both front-end and back-end development, meaning they have the skills to work on both the user interface and the server-side components of a web application. Here's an overview of what a Full Stack Developer does and the skills they typically possess. <br> <br>A Full Stack Developer is responsible for designing, building, and maintaining web applications from end to end. This includes working on both the client-facing aspects of the application (front end) and the server-side logic and databases (back end).</p>";
+            var t3Item=itemDetails[2];
+            var details = `<img style="height: 50%; width: 50%" src='${t3Item.image}' alt='Image of Item ${itemId}'>`;
+            details += `<h2>${t3Item.head}</h2>`;
+            details += `<p>${t3Item.description}</p>`;
+            details += `<span class="tags">Html</span>`;
         }
         else if (itemId === 4) {
-            details = "<img src='image2.jpg' alt='Image of Item 2'>";
-            details +="<h1>C++ Development</h1>"
-            details += "<p>A Full Stack Developer is a professional who is proficient in both front-end and back-end development, meaning they have the skills to work on both the user interface and the server-side components of a web application. Here's an overview of what a Full Stack Developer does and the skills they typically possess. <br> <br>A Full Stack Developer is responsible for designing, building, and maintaining web applications from end to end. This includes working on both the client-facing aspects of the application (front end) and the server-side logic and databases (back end).</p>";
+            var f4Item=itemDetails[3];
+            var details = `<img style="height: 50%; width: 50%" src='${f4Item.image}' alt='Image of Item ${itemId}'>`;
+            details += `<h2>${f4Item.head}</h2>`;
+            details += `<p>${f4Item.description}</p>`;
+            details += `<span class="tags">Html</span>`;
         }
         else if (itemId === 5) {
-            details = "<img src='image2.jpg' alt='Image of Item 2'>";
-            details +="<h1>C Development</h1>"
-            details += "<p>A Full Stack Developer is a professional who is proficient in both front-end and back-end development, meaning they have the skills to work on both the user interface and the server-side components of a web application. Here's an overview of what a Full Stack Developer does and the skills they typically possess. <br> <br>A Full Stack Developer is responsible for designing, building, and maintaining web applications from end to end. This includes working on both the client-facing aspects of the application (front end) and the server-side logic and databases (back end).</p>";
+            var f5Item=itemDetails[4];
+            var details = `<img style="height: 50%; width: 50%" src='${f5Item.image}' alt='Image of Item ${itemId}'>`;
+            details += `<h2>${f5Item.head}</h2>`;
+            details += `<p>${f5Item.description}</p>`;
+            details += `<span class="tags">Html</span>`;
         }
         else if (itemId === 6) {
-            details = "<img src='image2.jpg' alt='Image of Item 2'>";
-            details +="<h1>SQL Development</h1>"
-            details += "<p>A Full Stack Developer is a professional who is proficient in both front-end and back-end development, meaning they have the skills to work on both the user interface and the server-side components of a web application. Here's an overview of what a Full Stack Developer does and the skills they typically possess. <br> <br>A Full Stack Developer is responsible for designing, building, and maintaining web applications from end to end. This includes working on both the client-facing aspects of the application (front end) and the server-side logic and databases (back end).</p>";
+            var s6Item=itemDetails[5];
+            var details = `<img style="height: 50%; width: 50%" src='${s6Item.image}' alt='Image of Item ${itemId}'>`;
+            details += `<h2>${s6Item.head}</h2>`;
+            details += `<p>${s6Item.description}</p>`;
+            details += `<span class="tags">Html</span>` ;
         }
         else if (itemId === 7) {
-            details = "<img src='image2.jpg' alt='Image of Item 2'>";
-            details +="<h1>DataBase Development</h1>"
-            details += "<p>A Full Stack Developer is a professional who is proficient in both front-end and back-end development, meaning they have the skills to work on both the user interface and the server-side components of a web application. Here's an overview of what a Full Stack Developer does and the skills they typically possess. <br> <br>A Full Stack Developer is responsible for designing, building, and maintaining web applications from end to end. This includes working on both the client-facing aspects of the application (front end) and the server-side logic and databases (back end).</p>";
+            var s7Item=itemDetails[6];
+            var details = `<img style="height: 50%; width: 50%" src='${s7Item.image}' alt='Image of Item ${itemId}'>`;
+            details += `<h2>${s7Item.head}</h2>`;
+            details += `<p>${s7Item.description}</p>`;
+            details += `<span class="tags">Html</span>`;
         }
         // ... Add details for other items ...
 
