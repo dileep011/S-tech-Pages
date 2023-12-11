@@ -13,3 +13,4 @@ https://dileep011.github.io/s-technologies/register.html<br>
 https://dileep011.github.io/s-technologies/our-services.html<br>
 https://dileep011.github.io/s-technologies/projects.html<br>
 <br>
+https://dileep011.github.io/s-technologies/courses.html<br>
