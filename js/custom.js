@@ -20,20 +20,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Get form input values
         const firstName = document.getElementById("FirstName").value.trim();
-        const lastName = document.getElementById("LastName").value.trim();
         const email = document.getElementById("email").value.trim();
         const password = document.getElementById("password").value.trim();
         const phone = document.getElementById("Phone").value.trim();
-        const userName = document.getElementById("userName").value.trim();
 
         // If all fields are valid, proceed with saving user data
         const user = {
             "name": firstName,
-            "lastName": lastName,
             "email": email,
             "password": password,
             "phone": phone,
-            "userName": userName
         };
 
         try {
