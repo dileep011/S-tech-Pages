@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Event listener for form submission
-    const submit = document.getElementById("submit");
+    var submit = document.getElementById("submit");
 
     submit.addEventListener("click", async (e) => {
         e.preventDefault();
