@@ -57,6 +57,8 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+
+
     // Event listener for feedback form submission
     const sendMessage = document.getElementById("sendMessage");
 
@@ -79,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         try {
             // Make a POST request to save user data
-            const response = await fetch("http://localhost:8080/user/Email", {
+            const response = await fetch("http://localhost:8080/user/form", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -92,7 +94,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 const data = await response.json();
                 console.log(data);
                 window.alert("Send successfully 🤩");
-                window.location.href = "http://127.0.0.1:5500/index.html";
             }
         } catch (error) {
             console.error("Error:", error);
